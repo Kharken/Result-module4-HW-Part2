@@ -1,4 +1,4 @@
-import { ChangeEvent } from 'react';
+import { ChangeEvent, JSX } from 'react';
 
 export type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 export type InputStyle = 'default' | 'filled' | 'unstyled';
@@ -25,6 +25,7 @@ export interface InputProps {
   checked: boolean;
   isButtonDisabled: boolean;
   setIsButtonDisabled: (arg: boolean) => void;
+  icon: () => JSX.Element;
 }
 
 export interface InputState {

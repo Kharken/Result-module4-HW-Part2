@@ -17,7 +17,6 @@ export const useInput = () => {
     if (formRef.current) {
       formRef.current.reset();
     }
-    console.log(formData);
   };
   const handleReset = (evt: FormEvent) => {
     evt.preventDefault();

@@ -1,4 +1,5 @@
 import { InputProps } from '../types/types';
+import { Icon } from '../icon/Icon';
 
 export const SignupInputEmailProps: Partial<InputProps> = {
   id: 'email2',
@@ -69,6 +70,7 @@ export const SignupInputNickNameProps: Partial<InputProps> = {
   inputDescription: 'this input for nickname',
   title: 'Минимум 3 символа, максимум 25 символов',
   pattern: '^[\\wА-Яа-яЁё!@#$%^&*()_+\\-=\\[\\]{};\':"\\\\|,.<>\\/?]{3,25}$',
+  icon: Icon,
 };
 
 export const SignupInputMaleProps: Partial<InputProps> = {
