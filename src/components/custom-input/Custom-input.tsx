@@ -1,4 +1,4 @@
-import { InputProps } from '../types/types';
+import { InputProps } from '../../types/types';
 import styles from './Custom-input.module.css';
 import { getInputSizeStyle, getInputStyle } from './utils';
 import { useError } from '../../hooks/hooks';

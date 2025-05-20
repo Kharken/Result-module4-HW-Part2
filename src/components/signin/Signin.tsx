@@ -1,7 +1,7 @@
 import { CustomInput } from '../custom-input/Custom-input';
 import { SigninInputEmailProps, SigninInputPasswordProps } from './Signin.inputProps';
 import { useInput } from '../../hooks/hooks';
-import { DisabledProps } from '../types/types';
+import { DisabledProps } from '../../types/types';
 
 export const Signin = ({disabled, setIsButtonDisabled}: DisabledProps) => {
 

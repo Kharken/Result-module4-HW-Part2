@@ -1,4 +1,4 @@
-import { InputProps } from '../types/types';
+import { InputProps } from '../../types/types';
 import { Icon } from '../icon/Icon';
 
 export const SignupInputEmailProps: Partial<InputProps> = {

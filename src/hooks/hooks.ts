@@ -1,25 +1,25 @@
 import { ChangeEvent, FormEvent, useEffect, useMemo, useRef, useState } from 'react';
-import { InputName, InputState } from '../components/types/types';
+import { InputName, InputState } from '../types/types';
 
 export const useInput = () => {
   const [formData, setFormData] = useState<Partial<InputState>>({});
   const [comparedPasswordsValue, setComparedPasswordsValue] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [event.target.name]: event.target.value,
     }));
   };
-  const handleSubmit = (evt: FormEvent) => {
-    evt.preventDefault();
+  const handleSubmit = (event: FormEvent) => {
+    event.preventDefault();
     if (formRef.current) {
       formRef.current.reset();
     }
   };
-  const handleReset = (evt: FormEvent) => {
-    evt.preventDefault();
+  const handleReset = (event: FormEvent) => {
+    event.preventDefault();
     setFormData({});
 
   };

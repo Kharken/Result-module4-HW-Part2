@@ -9,7 +9,7 @@ import {
   SignupInputPasswordProps,
 } from './Signup.inputProps';
 import { useInput } from '../../hooks/hooks';
-import { DisabledProps } from '../types/types';
+import { DisabledProps } from '../../types/types';
 
 export const Signup = ({ disabled, setIsButtonDisabled }: DisabledProps) => {
 
